@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: rsshub
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: CACHE_EXPIRE
+        value: 60
+      - key: CACHE_CONTENT_EXPIRE
+        value: 60
